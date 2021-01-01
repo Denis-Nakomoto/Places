@@ -1,0 +1,219 @@
+{
+    "places": [
+    {
+        "promoImageURL": "Бургерная_дяди_джо", "id": 0,
+        "description": "Американская кухня",
+        "menu": [
+        {
+            "id": 0,
+            "sortOrder": 0,
+            "name": "Бургеры",
+            "dishes": [
+            {
+                "id": 0,
+                "sortOrder": 0,
+                "imageURL": "Гамбургер",
+                "name": "Гамбургер",
+                "weight": "100",
+                "price": 300,
+                "discount": 0.1
+            },
+            {
+                "id": 1,
+                "sortOrder": 1,
+                "imageURL": "Чизбургер",
+                "name": "Чизбургер",
+                "weight": "200",
+                "price": 400,
+                "discount": 0.3
+            }
+            ]
+        },
+        {
+            "id": 1,
+            "sortOrder": 1,
+            "name": "Салаты",
+            "dishes": [
+            {
+                "id": 0,
+                "sortOrder": 0,
+                "imageURL": "Цезарь",
+                "name": "Цезарь",
+                "weight": "550",
+                "price": 320,
+                "discount": 0.0
+            },
+            {
+                "id": 1,
+                "sortOrder": 1,
+                "imageURL": "Оливье",
+                "name": "Оливье",
+                "weight": "500",
+                "price": 330,
+                "discount": 0.3
+            }
+            ]
+        },
+        {
+            "id": 2,
+            "sortOrder": 2,
+            "name": "Напитки",
+            "dishes": [
+            {
+                "id": 0,
+                "sortOrder": 0,
+                "imageURL": "Лимонад",
+                "name": "Лимонад",
+                "weight": "110",
+                "price": 100,
+                "discount": 0.2
+            },
+            {
+                "id": 1,
+                "sortOrder": 1,
+                "imageURL": "Кофе",
+                "name": "Кофе",
+                "weight": "200",
+                "price": 250,
+                "discount": 0.1
+            }
+            ]
+        },
+        {
+            "id": 3,
+            "sortOrder": 3,
+            "name": "Десерты",
+            "dishes": [
+            {
+                "id": 0,
+                "sortOrder": 0,
+                "imageURL": "Терамису",
+                "name": "Терамису",
+                "weight": "330",
+                "price": 320,
+                "discount": 0.0
+            },
+            {
+                "id": 1,
+                "sortOrder": 1,
+                "imageURL": "Крем-брюле",
+                "name": "Крем-брюле",
+                "weight": "240",
+                "price": 330,
+                "discount": 0.3
+            }
+            ]
+        }
+        ]
+    },
+    {
+        "promoImageURL": "Сушибар", "id": 1,
+        "description": "Японская кухня",
+        "menu": [
+        {
+            "id": 0,
+            "sortOrder": 0,
+            "name": "Суши",
+            "dishes": [
+            {
+                "id": 0,
+                "sortOrder": 0,
+                "imageURL": "Суши",
+                "name": "Суши",
+                "weight": "100",
+                "price": 300,
+                "discount": 0.1
+            },
+            {
+                "id": 1,
+                "sortOrder": 1,
+                "imageURL": "Роллы",
+                "name": "Роллы",
+                "weight": "200",
+                "price": 400,
+                "discount": 0.3
+            }
+            ]
+        },
+        {
+            "id": 1,
+            "sortOrder": 1,
+            "name": "Салаты",
+            "dishes": [
+            {
+                "id": 0,
+                "sortOrder": 0,
+                "imageURL": "Цезарь",
+                "name": "Цезарь",
+                "weight": "550",
+                "price": 320,
+                "discount": 0.0
+            },
+            {
+                "id": 1,
+                "sortOrder": 1,
+                "imageURL": "Оливье",
+                "name": "Оливье",
+                "weight": "500",
+                "price": 330,
+                "discount": 0.3
+            }
+            ]
+        },
+        {
+            "id": 2,
+            "sortOrder": 2,
+            "name": "Напитки",
+            "dishes": [
+            {
+                "id": 0,
+                "sortOrder": 0,
+                "imageURL": "Лимонад",
+                "name": "Лимонад",
+                "weight": "110",
+                "price": 100,
+                "discount": 0.2
+            },
+            {
+                "id": 1,
+                "sortOrder": 1,
+                "imageURL": "Кофе",
+                "name": "Кофе",
+                "weight": "200",
+                "price": 250,
+                "discount": 0.1
+            }
+            ]
+        },
+        {
+            "id": 3,
+            "sortOrder": 3,
+            "name": "Десерты",
+            "dishes": [
+            {
+                "id": 0,
+                "sortOrder": 0,
+                "imageURL": "Терамису",
+                "name": "Терамису",
+                "weight": "330",
+                "price": 320,
+                "discount": 0.0
+            },
+            {
+                "id": 1,
+                "sortOrder": 1,
+                "imageURL": "Крем-брюле",
+                "name": "Крем-брюле",
+                "weight": "240",
+                "price": 330,
+                "discount": 0.3
+            }
+            ]
+        }
+        ]
+    }
+    ]
+}
+
+
+

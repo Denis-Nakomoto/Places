@@ -1,0 +1,16 @@
+PODS:
+  - Cosmos (22.1.0)
+
+DEPENDENCIES:
+  - Cosmos
+
+SPEC REPOS:
+  trunk:
+    - Cosmos
+
+SPEC CHECKSUMS:
+  Cosmos: 2795b36ad4bbea1af3050d6d65576ed63875f86a
+
+PODFILE CHECKSUM: fd2d1d274741eda2b76ed75f3cf2de5dd0842e78
+
+COCOAPODS: 1.9.3
