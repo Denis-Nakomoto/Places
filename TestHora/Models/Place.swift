@@ -14,6 +14,11 @@ struct Places: Codable {
 struct Place: Codable {
     let promoImageURL: String
     let id: Int
+    let description: String
+    let slogon: String
+    let discount: Double
+    let rating: Double
+    let location: String?
     let menu: [Menu]
 }
 

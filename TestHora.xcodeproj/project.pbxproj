@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -89,7 +89,6 @@
 				92886DB5259CB887002ADCD2 /* Services */,
 				92886DB4259CB878002ADCD2 /* Models */,
 				92886DB2259CB866002ADCD2 /* ViewControllers */,
-				92F9D8122592341100409F78 /* PlacesCustomCell.swift */,
 				92633615258B7CA700E7D6DE /* Assets.xcassets */,
 				92633617258B7CA700E7D6DE /* LaunchScreen.storyboard */,
 				9263361A258B7CA700E7D6DE /* Info.plist */,
@@ -97,13 +96,22 @@
 			path = TestHora;
 			sourceTree = "<group>";
 		};
+		92670D3C25A49CD200574341 /* DetailsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				92912909258CB63E00C6945D /* DetailsViewController.swift */,
+				92886DB8259F34FF002ADCD2 /* ButtomDetailView.swift */,
+			);
+			path = DetailsViewController;
+			sourceTree = "<group>";
+		};
 		92886DB2259CB866002ADCD2 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
 				9263362E258C3ECE00E7D6DE /* PlacesViewController.swift */,
-				92912909258CB63E00C6945D /* DetailsViewController.swift */,
-				92886DB8259F34FF002ADCD2 /* ButtomDetailView.swift */,
+				92670D3C25A49CD200574341 /* DetailsViewController */,
 				92633610258B7CA500E7D6DE /* MenuViewController.swift */,
+				92DCD13D25A0648500254EF6 /* Cells */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -124,13 +132,20 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		92DCD13D25A0648500254EF6 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				92F9D8122592341100409F78 /* PlacesCustomCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		F5EE43FF510F92AACB67DEEE /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				0B492D113601EF1B79F84976 /* Pods-TestHora.debug.xcconfig */,
 				697450910426DF7D81AD8E86 /* Pods-TestHora.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -397,6 +412,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VV3HM9845R;
 				INFOPLIST_FILE = TestHora/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -416,6 +432,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VV3HM9845R;
 				INFOPLIST_FILE = TestHora/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

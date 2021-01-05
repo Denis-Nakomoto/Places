@@ -3,6 +3,10 @@
     {
         "promoImageURL": "Бургерная_дяди_джо", "id": 0,
         "description": "Американская кухня",
+        "discount": 0.2,
+        "rating": 5,
+        "slogon": "Жизнь - это не только работа",
+        "location": "Moscow",
         "menu": [
         {
             "id": 0,
@@ -109,6 +113,10 @@
     {
         "promoImageURL": "Сушибар", "id": 1,
         "description": "Японская кухня",
+        "discount": 0.1,
+        "rating": 4,
+        "location": "Khabarovsk, Istomona, 90",
+        "slogon": "Большая порция вашего удовольствия",
         "menu": [
         {
             "id": 0,

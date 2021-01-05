@@ -34,9 +34,9 @@ class PlacesCustomCell: UITableViewCell {
     let detailsLabel: UILabel = {
         let detailsLabel = UILabel()
         detailsLabel.textColor = .lightGray
-        detailsLabel.font = .systemFont(ofSize: 10, weight: .light)
+        detailsLabel.font = .systemFont(ofSize: 14, weight: .light)
         detailsLabel.numberOfLines = 0
-        detailsLabel.text = "RRrcdcdndjvn oifojkvn"
+        detailsLabel.text = "detailsLabel"
         return detailsLabel
     }()
     

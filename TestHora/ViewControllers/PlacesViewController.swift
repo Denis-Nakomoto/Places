@@ -18,19 +18,14 @@ class PlacesViewController: UIViewController {
     private var safeArea: UILayoutGuide!
     private var places: Places!
     
-    override func loadView() {
-        super.loadView()
-        view.backgroundColor = .white
-        safeArea = view.layoutMarginsGuide
-        setupTableView()
-    }
-    
     override func viewWillAppear(_ animated: Bool) {
         setupNavigationBar()
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        safeArea = view.layoutMarginsGuide
+        setupTableView()
         fetchData()
         tableView.dataSource = self
         tableView.delegate = self
@@ -64,7 +59,6 @@ class PlacesViewController: UIViewController {
         
         // Set appearance
         let navBarAppearance = UINavigationBarAppearance()
-        navBarAppearance.configureWithOpaqueBackground()
         navBarAppearance.titleTextAttributes = [.foregroundColor: UIColor.white]
         navBarAppearance.largeTitleTextAttributes = [.foregroundColor: UIColor.white]
         navBarAppearance.backgroundColor = UIColor(
@@ -97,7 +91,9 @@ extension PlacesViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: PlacesCustomCell.reuseId, for: indexPath) as! PlacesCustomCell
         let placeName = places.places[indexPath.row].promoImageURL
+        let placeDesription = places.places[indexPath.row].description
         cell.nameLabel.text = placeName.replacingOccurrences(of: "_", with: " ")
+        cell.detailsLabel.text = placeDesription
         cell.imageOfPlace.image = UIImage(named: places.places[indexPath.row].promoImageURL)
         return cell
     }
