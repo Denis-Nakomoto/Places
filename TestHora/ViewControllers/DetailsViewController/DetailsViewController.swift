@@ -28,6 +28,7 @@ class DetailsViewController: UIViewController {
         setupPlacemark()
         checkLocationServices()
         bottomView.locationManager = locationManager
+        bottomView.details = details
         imageView.image = UIImage(named: details.promoImageURL)
         bottomView.mapView.delegate = self
         view.backgroundColor = .white

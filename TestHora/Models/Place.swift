@@ -22,15 +22,31 @@ struct Place: Codable {
     let menu: [Menu]
 }
 
-struct Menu: Codable {
+struct Menu: Codable, Hashable {
     let id, sortOrder: Int
     let name: String
     let dishes: [Dish]
+    
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(id)
+    }
+    
+    static func == (lhs: Menu, rhs: Menu) -> Bool {
+        return lhs.id == rhs.id
+    }
 }
 
-struct Dish: Codable {
+struct Dish: Codable, Hashable {
     let id, sortOrder: Int
     let imageURL, name, weight: String
     let price: Int
     let discount: Double
+    
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(id)
+    }
+    
+    static func == (lhs: Dish, rhs: Dish) -> Bool {
+        return lhs.id == rhs.id
+    }
 }

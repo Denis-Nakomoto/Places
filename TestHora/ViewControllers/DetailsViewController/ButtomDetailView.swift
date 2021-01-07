@@ -13,6 +13,7 @@ class ButtomDetailView: UIViewController {
     
     private let regionInMetres = 10000.0
     var locationManager: CLLocationManager!
+    var details: Place!
     
     var placeName: UILabel = {
         let placeName = UILabel()
@@ -81,6 +82,7 @@ class ButtomDetailView: UIViewController {
         menuButton.layer.borderColor = #colorLiteral(red: 0, green: 0.9768045545, blue: 0, alpha: 1)
         menuButton.setTitleColor(.systemGreen, for: .normal)
         menuButton.setTitle("Menu", for: .normal)
+        menuButton.addTarget(self, action: #selector (showMenu), for: .touchUpInside)
         return menuButton
     }()
     
@@ -126,6 +128,14 @@ class ButtomDetailView: UIViewController {
                                             longitudinalMeters: regionInMetres)
             mapView.setRegion(region, animated: true)
         }
+    }
+    
+    @objc func showMenu() {
+        let menuVC = MenuViewController()
+        let vc = UINavigationController(rootViewController: menuVC)
+        menuVC.sections = details.menu
+        vc.modalPresentationStyle = .automatic
+        self.present(vc, animated: true, completion: nil)
     }
     
     // Setup constraints
@@ -208,28 +218,3 @@ class ButtomDetailView: UIViewController {
         ])
     }
 }
-
-
-// MARK: - SwiftUI
-import SwiftUI
-
-struct FarmCellProvider: PreviewProvider {
-    static var previews: some View {
-        ContainerView().edgesIgnoringSafeArea(.all)
-    }
-    
-    struct ContainerView: UIViewControllerRepresentable {
-        
-        let viewController = ButtomDetailView()
-        
-        func makeUIViewController(context: UIViewControllerRepresentableContext<FarmCellProvider.ContainerView>) -> ButtomDetailView {
-            return viewController
-        }
-        
-        func updateUIViewController(_ uiViewController: FarmCellProvider.ContainerView.UIViewControllerType, context: UIViewControllerRepresentableContext<FarmCellProvider.ContainerView>) {
-            
-        }
-    }
-}
-
-

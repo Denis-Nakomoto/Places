@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		2B1460848FE39F92B00B5648 /* Pods_TestHora.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D2C078DAB899D7035B479D3 /* Pods_TestHora.framework */; };
+		9215BD4625A698840012E5EF /* SectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9215BD4525A698840012E5EF /* SectionHeader.swift */; };
+		9228D64D25A550930009B146 /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9228D64C25A550930009B146 /* MenuCell.swift */; };
 		9263360D258B7CA500E7D6DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9263360C258B7CA500E7D6DE /* AppDelegate.swift */; };
 		9263360F258B7CA500E7D6DE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9263360E258B7CA500E7D6DE /* SceneDelegate.swift */; };
 		92633611258B7CA500E7D6DE /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92633610258B7CA500E7D6DE /* MenuViewController.swift */; };
@@ -26,6 +28,8 @@
 		0B492D113601EF1B79F84976 /* Pods-TestHora.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestHora.debug.xcconfig"; path = "Target Support Files/Pods-TestHora/Pods-TestHora.debug.xcconfig"; sourceTree = "<group>"; };
 		4D2C078DAB899D7035B479D3 /* Pods_TestHora.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestHora.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		697450910426DF7D81AD8E86 /* Pods-TestHora.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestHora.release.xcconfig"; path = "Target Support Files/Pods-TestHora/Pods-TestHora.release.xcconfig"; sourceTree = "<group>"; };
+		9215BD4525A698840012E5EF /* SectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeader.swift; sourceTree = "<group>"; };
+		9228D64C25A550930009B146 /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
 		92633609258B7CA500E7D6DE /* TestHora.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestHora.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9263360C258B7CA500E7D6DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9263360E258B7CA500E7D6DE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -136,6 +140,8 @@
 			isa = PBXGroup;
 			children = (
 				92F9D8122592341100409F78 /* PlacesCustomCell.swift */,
+				9215BD4525A698840012E5EF /* SectionHeader.swift */,
+				9228D64C25A550930009B146 /* MenuCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -264,6 +270,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9263362F258C3ECE00E7D6DE /* PlacesViewController.swift in Sources */,
+				9228D64D25A550930009B146 /* MenuCell.swift in Sources */,
+				9215BD4625A698840012E5EF /* SectionHeader.swift in Sources */,
 				92633611258B7CA500E7D6DE /* MenuViewController.swift in Sources */,
 				92633626258B906100E7D6DE /* Place.swift in Sources */,
 				9263362A258B98A200E7D6DE /* NetworkManager.swift in Sources */,
